@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta charset="utf-8" />
+	    <title>{% block title %}{% endblock %}</title>
+	    <script charset="utf-8" src="{% block javascript %}{% endblock %}"></script>
+	</head>
+	<body>
+		<header>
+			<link rel="stylesheet" href="{{url_for('static', filename='styles/base.css')}}" />
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet"> 
+		</header>
+	    <main>
+	    	<link rel="stylesheet" href="{% block css %}{% endblock %}" />
+	    	{% block main %}
+	    	{% endblock %}
+	    </main>
+	</body>
+</html>

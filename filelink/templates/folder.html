@@ -1,0 +1,52 @@
+{% extends './base/base.html' %}
+
+{% block title %}
+	{{page_title}}
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+
+{% block css %}
+	{{url_for('static', filename='styles/folder.css')}}
+{% endblock %}
+
+{% block main %}
+	<div class="main-holder">
+		<div>
+			<div class="upload-file-div">
+				<div class="upload-header">
+					<p class="upload-text">Upload a new file</p>
+					<a href="/" class="back-btn">go back</a>
+				</div>
+				<form class="submit-file-form" action="/folder/{{folder.folder_name}}" method="POST" enctype="multipart/form-data">
+					<input class="file-submit" required type="file" name="file_upload">
+					<div class="submit-button">
+						<button class="btn-submit" type="submit">Upload</button>
+					</div>
+				</form>
+			</div>
+			<div class="folder-content">
+				{% for file in files %}
+					<div class="display-file">
+						<a href="/folder/{{folder.folder_name}}/delete/{{file.id}}">
+							<img class="delete-file-icon" src="https://img.icons8.com/color/18/000000/delete-sign--v1.png"/>
+						</a>
+						{% if  "image" in file.file_mimetype %}
+							<img class="file-icon" src="https://img.icons8.com/fluency/18/000000/image.png"/>
+						{% elif "text" in file.file_mimetype %}
+							<img class="file-icon" src="https://img.icons8.com/ultraviolet/18/000000/txt.png"/>
+						{% elif "pdf" in file.file_mimetype %}
+							<img class="file-icon" src="https://img.icons8.com/color/18/000000/pdf-2.png"/>
+						{% elif "video" in file.file_mimetype %}
+							<img class="file-icon" src="https://img.icons8.com/fluency/18/000000/video.png"/>
+						{% elif "audio" in file.file_mimetype %}
+							<img class="file-icon" src="https://img.icons8.com/color/18/000000/high-volume--v1.png"/>
+						{% endif %}
+						<a class="file-text" href="/folder/{{folder.folder_name}}/file/{{file.id}}">{{file.file_name}}</a>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

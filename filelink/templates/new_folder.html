@@ -1,0 +1,32 @@
+{% extends './base/base.html' %}
+
+{% block title %}
+	{{page_title}}
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
+
+{% block css %}
+	{{url_for('static', filename='styles/new_folder.css')}}
+{% endblock %}
+
+{% block main %}
+	<div class="main-holder">
+		<div>
+			<div class="footer-header">
+				<p>Create a new folder</p>
+				<a class="back-btn" href="/">go back</a>
+			</div>
+			<form class="form-div" accept="/folder/new" method="POST">
+				<div class="form-text-input">
+					<label class="folder-label" for="folder_name_input">Choose folder name:</label>
+					<input class="folder-text-input" required placeholder="Choose the name for the folder." type="text" name="folder_name_input">
+				</div>
+				<div class="form-button-submit">
+					<button>Create folder</button>
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
