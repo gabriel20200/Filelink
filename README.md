@@ -6,17 +6,15 @@ Filelink is a simple web application that allows you to host a personal cloud fi
 
 <h3 align="center">Folders Preview</h3>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/79603829/141690483-3b45a0a7-793b-4345-abe0-98a497c98a0e.png"/>
+  <img src="https://user-images.githubusercontent.com/79603829/143728783-a017fd9c-fc0c-453e-8beb-bc4af0bd1616.PNG"/>
 </p>
-![Capture](https://user-images.githubusercontent.com/79603829/143728783-a017fd9c-fc0c-453e-8beb-bc4af0bd1616.PNG)
 
 <br>
 <br>
 
 <h3 align="center">Folder Files Preview</h3>
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/79603829/141690483-3b45a0a7-793b-4345-abe0-98a497c98a0e.png"/>
+  <img src="https://user-images.githubusercontent.com/79603829/143728795-e3eaf9ef-dad9-4a24-b7a2-6bd296e4b340.PNG"/>
 </p>
-![1](https://user-images.githubusercontent.com/79603829/143728795-e3eaf9ef-dad9-4a24-b7a2-6bd296e4b340.PNG)
 
 <br>
