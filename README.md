@@ -18,3 +18,26 @@ Filelink is a simple web application that allows you to host a personal cloud fi
 </p>
 
 <br>
+
+## Getting Started
+
+1) Make sure you have ``Python 3.9`` and ``pip3`` installed on your system.
+2) Clone the GitHub repository onto your system.
+3) Change directory into the cloned repository's folder, and run ``pip3 install -r requirements.txt`` in the command terminal.
+4) Once all the required liberaries are downloaded, run ``flask run`` into the command terminal.
+5) Make sure to run ``flask run -h 0.0.0.0 -p 80`` into the command terminal if you're gonna be hosting the server on a VPS
+
+## Features
+
+- Folders for files
+- Folder deletion (deletes all the files within the folder upon deletion)
+- File deletion
+- File icons
+- Nice and simple UI
+
+## Programming Languages
+
+- Filelink's database was written in Sqlite via the SQLAlchemy liberary
+- Filelink's back-end was written in Python Flask (Python 3.9.2)
+- Filelink's front-end was written in HTML & CSS
+- Filelink's private constants are stored in a JSON file 
