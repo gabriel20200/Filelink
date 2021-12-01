@@ -25,7 +25,7 @@ Filelink is a simple web application that allows you to host a personal cloud fi
 2) Clone the GitHub repository onto your system.
 3) Change directory into the cloned repository's folder, and run ``pip3 install -r requirements.txt`` in the command terminal.
 4) Once all the required liberaries are downloaded, run ``flask run`` into the command terminal.
-5) Make sure to run ``flask run -h 0.0.0.0`` into the command terminal if you're gonna be hosting the server on a VPS
+5) Make sure to run ``flask run -h 0.0.0.0`` into the command terminal if you're gonna be hosting the server publically
 
 ## Features
 
