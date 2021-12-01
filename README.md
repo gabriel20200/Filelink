@@ -39,5 +39,5 @@ Filelink is a simple web application that allows you to host a personal cloud fi
 
 - Filelink's database was written in Sqlite via the SQLAlchemy liberary
 - Filelink's back-end was written in Python Flask (Python 3.9.2)
-- Filelink's front-end was written in HTML & CSS
+- Filelink's front-end was written in HTML & CSS (using Jinja)
 - Filelink's private constants are stored in a JSON file 
