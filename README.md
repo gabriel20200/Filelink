@@ -1,4 +1,4 @@
-# Filelink - A homebrew file cloud storage.
+# Filelink - A homebrew file cloud storage server.
 
 Filelink is a simple web application that allows you to host a personal cloud file storage server from the comfort of your own home! Tired of having to email yourself that photo you want on your computer? Well with Filelink, now you'll be able to transfer files from your phone and onto your computer (or the other way around) within seconds! 
 
